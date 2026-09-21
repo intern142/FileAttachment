@@ -1,0 +1,19 @@
+{
+  "contractors": {
+    "ABC Construction": "ABC",
+    "XYZ Builders": "XYZ",
+    "PQR Infra": "PQR",
+    "LMN Contractors": "LMN"
+  },
+  "accounts_team": [
+    "john_doe",
+    "jane_smith",
+    "mike_wilson"
+  ],
+  "base_folder": "Invoices",
+  "date_format": "%Y-%m-%d",
+  "filename_format": "{contractor_short}-{purchased_from}-{date}.jpg",
+  "whatsapp_download_folder": "",
+  "whatsapp_business_download_folder": "",
+  "supported_extensions": [".jpg", ".jpeg", ".png", ".pdf"]
+}

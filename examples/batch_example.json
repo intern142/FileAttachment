@@ -1,0 +1,12 @@
+{
+  "person": "john_doe",
+  "contractor": "ABC Construction",
+  "purchased_from": "Home Depot",
+  "invoice_date": "2026-01-15",
+  "move": true,
+  "files": [
+    "C:\\Downloads\\receipt1.jpg",
+    "C:\\Downloads\\receipt2.jpg",
+    "C:\\Downloads\\receipt3.jpg"
+  ]
+}
