@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test files
+test_input/
+*.jpg
+*.jpeg
+*.png
+*.pdf
+
+# Invoices (generated folders)
+Invoices/
+
+# Progress tracking (keep PROGRESS.md but not auto-generated)
+# PROGRESS.md
