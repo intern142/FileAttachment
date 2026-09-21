@@ -1,0 +1,4 @@
+source_path,person,contractor,purchased_from,date
+invoices/receipt1.jpg,john_doe,ABC Construction,Home Depot,2026-01-15
+invoices/receipt2.pdf,jane_smith,XYZ Builders,Lowe's,2026-02-20
+invoices/receipt3.png,mike_wilson,PQR Contractors,Local Supplier,2026-03-10

@@ -1,0 +1,59 @@
+{
+  "base_folder": "Invoices",
+  "supported_extensions": [".jpg", ".jpeg", ".png", ".pdf", ".webp"],
+  "default_extension": ".jpg",
+  "filename_format": "{contractor_short}-{purchased_from_short}-{date}{ext}",
+  "date_format": "%Y-%m-%d",
+  "quarter_months": {
+    "Q1": [1, 2, 3],
+    "Q2": [4, 5, 6],
+    "Q3": [7, 8, 9],
+    "Q4": [10, 11, 12]
+  },
+  "contractors": {
+    "ABC Construction": {
+      "short_code": "ABC",
+      "category": "Construction"
+    },
+    "XYZ Builders": {
+      "short_code": "XYZ",
+      "category": "Construction"
+    },
+    "PQR Contractors": {
+      "short_code": "PQR",
+      "category": "Contracting"
+    },
+    "LMN Infra": {
+      "short_code": "LMN",
+      "category": "Infrastructure"
+    },
+    "RST Developers": {
+      "short_code": "RST",
+      "category": "Development"
+    }
+  },
+  "purchased_from": {
+    "Home Depot": "HD",
+    "Lowe's": "LW",
+    "Local Supplier": "LS",
+    "Online Store": "OS",
+    "Wholesale Market": "WM"
+  },
+  "accounts_team": [
+    "john_doe",
+    "jane_smith",
+    "mike_wilson"
+  ],
+  "logging": {
+    "level": "INFO",
+    "file": "logs/organizer.log",
+    "max_bytes": 1048576,
+    "backup_count": 5
+  },
+  "whatsapp": {
+    "download_folder": "C:\\Users\\{username}\\AppData\\Local\\WhatsApp\\Media\\WhatsApp Images",
+    "debounce_seconds": 1,
+    "size_stable_checks": 2,
+    "size_check_interval_ms": 500
+  }
+}
