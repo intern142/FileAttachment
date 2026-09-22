@@ -1,0 +1,53 @@
+# WhatsApp Invoice Organizer Configuration
+
+# WhatsApp Media folder path (where downloaded images go)
+# Typical Windows paths:
+# C:\Users\{username}\AppData\Local\WhatsApp\Media\WhatsApp Images
+# Or check: C:\Users\{username}\Pictures\WhatsApp Images
+whatsapp_download_folder: "C:\\Users\\{username}\\AppData\\Local\\WhatsApp\\Media\\WhatsApp Images"
+
+# Destination root folder for organized invoices
+destination_root: "D:\\Invoices_Organized"
+
+# Contractor name mappings (WhatsApp contact name -> short code)
+# Add your contractor mappings here
+contractor_mappings:
+  "ABC Construction": "ABC"
+  "XYZ Builders": "XYZ"
+  "PQR Contractors": "PQR"
+  "LMN Infra": "LMN"
+  "RST Developers": "RST"
+
+# Default contractor code if not found in mappings
+default_contractor_code: "UNK"
+
+# Purchase source mappings (keywords in filename/caption -> short code)
+purchase_source_mappings:
+  "cement": "CEM"
+  "steel": "STL"
+  "sand": "SND"
+  "brick": "BRK"
+  "aggregate": "AGG"
+  "paint": "PNT"
+  "pipe": "PIP"
+  "wire": "WRE"
+  "tile": "TLE"
+  "wood": "WOD"
+
+default_purchase_source: "GEN"
+
+# File extensions to process
+valid_extensions:
+  - ".jpg"
+  - ".jpeg"
+  - ".png"
+  - ".pdf"
+  - ".webp"
+
+# Processing settings
+process_existing_files: true  # Process files already in folder on startup
+watch_subdirectories: true    # Watch subfolders in WhatsApp media folder
+
+# Logging
+log_level: "INFO"
+log_file: "invoice_organizer.log"
