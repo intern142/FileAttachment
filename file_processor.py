@@ -72,14 +72,20 @@ class FileProcessor:
         if contact_name and contact_name in self.contractor_mappings:
             return self.contractor_mappings[contact_name]
         
-        # Try to find contractor name in filename
+        # Normalize filename for matching (replace separators with space)
+        normalized_filename = re.sub(r'[\s_\-]+', ' ', filename).strip().lower()
+        
+        # Try to find contractor name in filename (normalize both)
         for name, code in self.contractor_mappings.items():
-            if name.lower() in filename.lower():
+            normalized_name = re.sub(r'[\s_\-]+', ' ', name).strip().lower()
+            if normalized_name in normalized_filename:
                 return code
         
         # Try common patterns in filename (e.g., "ABC_", "ABC-", "ABC ")
         for name, code in self.contractor_mappings.items():
-            pattern = re.escape(name) + r'[\s_\-]'
+            # Match first word of contractor name + separator
+            first_word = name.split()[0]
+            pattern = re.escape(first_word) + r'[\s_\-]'
             if re.search(pattern, filename, re.IGNORECASE):
                 return code
         

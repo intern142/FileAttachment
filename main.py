@@ -202,8 +202,8 @@ def cmd_stats(args, config: Dict[str, Any]):
                             total_size += f.stat().st_size
                 
                 q_files += m_files
+            year_files += q_files
         
-        year_files = q_files
         total_files += year_files
         print(f"  Year total: {year_files} files")
     
